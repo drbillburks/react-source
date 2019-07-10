@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -19,19 +20,205 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
-    />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <title>Dr. Bill Burks - Biblical Scholar, Retired Pastor</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>Dr. Bill Burks - Biblical Scholar, Retired Pastor</title>
+</head>
+
+<body>
+  <noscript>
+    <div id="root">
+      <div class="container">
+        <div class="jumbotron"><img src="logo.png" alt="Dr. Bill Burks" class="rounded float-left mr-3 ">
+          <h1 class="text-left">Dr. Bill Burks</h1>
+        </div>
+        <div class="row">
+          <div class="col"><a href="#home"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M256 128c35.35 0 64-28.65 64-64S291.35 0 256 0s-64 28.65-64 64 28.65 64 64 64zm-30.63 169.75c14.06 16.72 39 19.09 55.97 5.22l88-72.02c17.09-13.98 19.59-39.19 5.62-56.28-13.97-17.11-39.19-19.59-56.31-5.62l-57.44 47-38.91-46.31c-15.44-18.39-39.22-27.92-64-25.33-24.19 2.48-45.25 16.27-56.37 36.92l-49.37 92.03c-23.4 43.64-8.69 96.37 34.19 123.75L131.56 432H40c-22.09 0-40 17.91-40 40s17.91 40 40 40h208c34.08 0 53.77-42.79 28.28-68.28L166.42 333.86l34.8-64.87 24.15 28.76z">
+                </path>
+              </svg>Home</a></div>
+          <div class="col"><a href="#papers"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z">
+                </path>
+              </svg> Papers</a></div>
+          <div class="col"><a href="#podcast"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M267.429 488.563C262.286 507.573 242.858 512 224 512c-18.857 0-38.286-4.427-43.428-23.437C172.927 460.134 160 388.898 160 355.75c0-35.156 31.142-43.75 64-43.75s64 8.594 64 43.75c0 32.949-12.871 104.179-20.571 132.813zM156.867 288.554c-18.693-18.308-29.958-44.173-28.784-72.599 2.054-49.724 42.395-89.956 92.124-91.881C274.862 121.958 320 165.807 320 220c0 26.827-11.064 51.116-28.866 68.552-2.675 2.62-2.401 6.986.628 9.187 9.312 6.765 16.46 15.343 21.234 25.363 1.741 3.654 6.497 4.66 9.449 1.891 28.826-27.043 46.553-65.783 45.511-108.565-1.855-76.206-63.595-138.208-139.793-140.369C146.869 73.753 80 139.215 80 220c0 41.361 17.532 78.7 45.55 104.989 2.953 2.771 7.711 1.77 9.453-1.887 4.774-10.021 11.923-18.598 21.235-25.363 3.029-2.2 3.304-6.566.629-9.185zM224 0C100.204 0 0 100.185 0 224c0 89.992 52.602 165.647 125.739 201.408 4.333 2.118 9.267-1.544 8.535-6.31-2.382-15.512-4.342-30.946-5.406-44.339-.146-1.836-1.149-3.486-2.678-4.512-47.4-31.806-78.564-86.016-78.187-147.347.592-96.237 79.29-174.648 175.529-174.899C320.793 47.747 400 126.797 400 224c0 61.932-32.158 116.49-80.65 147.867-.999 14.037-3.069 30.588-5.624 47.23-.732 4.767 4.203 8.429 8.535 6.31C395.227 389.727 448 314.187 448 224 448 100.205 347.815 0 224 0zm0 160c-35.346 0-64 28.654-64 64s28.654 64 64 64 64-28.654 64-64-28.654-64-64-64z">
+                </path>
+              </svg> Podcast</a></div>
+          <div class="col"><a href="#testimony"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z">
+                </path>
+              </svg>Testimony</a></div>
+        </div>
+        <section id="home">
+          <h1><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M256 128c35.35 0 64-28.65 64-64S291.35 0 256 0s-64 28.65-64 64 28.65 64 64 64zm-30.63 169.75c14.06 16.72 39 19.09 55.97 5.22l88-72.02c17.09-13.98 19.59-39.19 5.62-56.28-13.97-17.11-39.19-19.59-56.31-5.62l-57.44 47-38.91-46.31c-15.44-18.39-39.22-27.92-64-25.33-24.19 2.48-45.25 16.27-56.37 36.92l-49.37 92.03c-23.4 43.64-8.69 96.37 34.19 123.75L131.56 432H40c-22.09 0-40 17.91-40 40s17.91 40 40 40h208c34.08 0 53.77-42.79 28.28-68.28L166.42 333.86l34.8-64.87 24.15 28.76z">
+              </path>
+            </svg> Who is Dr. Bill Burks?</h1>
+          <p>Dr. Bill Burks of Fort Worth Texas provides both audio, and textual sermons. Pastor Bill Burks's ministry
+            is varied. He has taught Sabbath school and delights in explaining Bible principles. He has studied Greek
+            and Hebrew and enjoys sharing insights from both languages.</p>
+          <p>He prays for people and preaches in a way that even children can understand the gospel message. He can
+            bring concepts of faith down to their level and still keep the interest of their parents.</p>
+          <p>He has gone out of his way to assist folks when necessary and works with church leaders to present a united
+            front to the community. He has the skills from his secular job to reach people with the Word of God. He
+            adheres to sound doctrine and can explain where cults may deviate from the simple New Testament faith of the
+            time of Jesus Christ. One leader at our church conference summed him up in just two words one year: "Good
+            thinker."</p>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title h5">Psalm 37:39</div>
+              <p class="card-text">But the salvation of the righteous is of the LORD</p>
+            </div>
+          </div>
+        </section>
+        <section id="papers">
+          <h1><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z">
+              </path>
+            </svg>Papers</h1>
+          <ul class="papers">
+            <li>Previously available papers will be converted to text from pdf and will be available soon.</li>
+          </ul>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title h5">Ecclesiastes 12:12</div>
+              <p class="card-text">Of making many books there is no end, and much study wearies the body.</p>
+            </div>
+          </div>
+        </section>
+        <section id="podcast">
+          <h1><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M267.429 488.563C262.286 507.573 242.858 512 224 512c-18.857 0-38.286-4.427-43.428-23.437C172.927 460.134 160 388.898 160 355.75c0-35.156 31.142-43.75 64-43.75s64 8.594 64 43.75c0 32.949-12.871 104.179-20.571 132.813zM156.867 288.554c-18.693-18.308-29.958-44.173-28.784-72.599 2.054-49.724 42.395-89.956 92.124-91.881C274.862 121.958 320 165.807 320 220c0 26.827-11.064 51.116-28.866 68.552-2.675 2.62-2.401 6.986.628 9.187 9.312 6.765 16.46 15.343 21.234 25.363 1.741 3.654 6.497 4.66 9.449 1.891 28.826-27.043 46.553-65.783 45.511-108.565-1.855-76.206-63.595-138.208-139.793-140.369C146.869 73.753 80 139.215 80 220c0 41.361 17.532 78.7 45.55 104.989 2.953 2.771 7.711 1.77 9.453-1.887 4.774-10.021 11.923-18.598 21.235-25.363 3.029-2.2 3.304-6.566.629-9.185zM224 0C100.204 0 0 100.185 0 224c0 89.992 52.602 165.647 125.739 201.408 4.333 2.118 9.267-1.544 8.535-6.31-2.382-15.512-4.342-30.946-5.406-44.339-.146-1.836-1.149-3.486-2.678-4.512-47.4-31.806-78.564-86.016-78.187-147.347.592-96.237 79.29-174.648 175.529-174.899C320.793 47.747 400 126.797 400 224c0 61.932-32.158 116.49-80.65 147.867-.999 14.037-3.069 30.588-5.624 47.23-.732 4.767 4.203 8.429 8.535 6.31C395.227 389.727 448 314.187 448 224 448 100.205 347.815 0 224 0zm0 160c-35.346 0-64 28.654-64 64s28.654 64 64 64 64-28.654 64-64-28.654-64-64-64z">
+              </path>
+            </svg> Podcast</h1>
+          <div class="maincontent">
+            <ul class="podcast">
+              <li> Previously available audio sermons will be uploaded to a streaming platform and will be available
+                soon.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title h5">Romans 10:14</div>
+              <p class="card-text">...how shall they hear without a preacher?</p>
+            </div>
+          </div>
+        </section>
+        <section id="testimony">
+          <h1><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z">
+              </path>
+            </svg> Testimony</h1>
+          <p>My father's family was religious. Neither my mother nor my father went to church. Except for a short period
+            of time when I was around five my life was basically irreligious. When I was about five I was given a Bible
+            that I kept until I was almost an adult. I would occasionally read the scripture.</p>
+          <p>One summer I when I was a young teen I went to visit my father at his home in Arkansas. He lived in the
+            country. Many of my father's neighbors were poor but very religious people. Across the dirt road from my
+            father's house was a family who had a church in their home. They met on the Sabbath. They were Seventh-day
+            Adventist. My dad allowed me to go over there on Saturday and worship with them. </p>
+          <p>Several summers later I went to the Baptist summer camp with cousins church. At that summer camp I went
+            forward during one of the meetings because I realized my need for a savior. During that summer camp I also
+            met a Southern Baptist missionary. I was impressed by his sermon, after it was over I went up to him and
+            ask: "Why do we go to church on Sunday but other people, and the Jews go to church on Saturday." He told me
+            not to worry about it. But I did any way. </p>
+          <p>I went home from that summer camp and joined the Pecan Springs Baptist Church in Austin TX which I attended
+            for a period of time. I was baptized by immersion in this church. After a while I drifted away and started
+            living in ways that were not Christian. </p>
+          <p>It was not until I was in Technical school in the early 70's that I was to come back to God. It was one
+            night during an Amateur Radio club meeting at my school. That club meeting turned into a Bible study. By
+            this time in my life I had lapsed into the error of Theistic evolution. </p>
+          <p>One of the men there by the name of Bill Priester told me that evolution could be completely disproved. I
+            was skeptical. I came to find out that he was right. </p>
+          <p>It was several years later that I came in contact with the Seventh-Day Baptist people. I used to pass a
+            Seventh-Day Baptist Church that was in Los Angeles. Cindy and I decided to try going there. Chuck Graffius
+            was the pastor there. While there, we met John and Ruth Piel. We continued to go there until we moved to
+            Salt Lake in late 1979. </p>
+          <p>While in Salt Lake, Cindy and I found it difficult to find a church in that city we could attend. I
+            contacted the Church of God 7th day in Denver Colorado. Cindy and I joined that church and were asked by the
+            Western District coordinator there to try to start a church in Salt Lake. We started a fellowship while
+            living there. </p>
+          <p>I did not discover that many of the ministers in the Church of God 7th day believed that Christ was created
+            until we moved to Fresno CA. I was assured by some of my friends who were leading ministers in that church
+            that the doctrine was being reviewed. I moved to Little Rock and started to attend the Little Rock
+            Seventh-day Baptist Church. We joined the church but retained membership in the Church of God 7th Day. I
+            moved to Little Rock in 1985. </p>
+          <p>From 1985 to the year 2000 I preached at the Seventh-Day Baptist church in Little Rock Arkansas, and during
+            that time I shared the pulpit at the Little Rock SDB church. In 2000 I moved my membership to Faith
+            Seventh-Day Baptist church. I have been a faithful member of the Doniphin church for several years. I am a
+            Seventh Day Baptist, a Sabbatarian, and a Baptist but most of all I am a follower of Jesus. I know that God
+            has given me gifts and talents. I believe he has called me to the ministry. </p>
+          <p>I love the Seventh Day Baptists that I have met, from all around the United States. I have attended the
+            South West Association and the Conference for several years representing the Little Rock Church. </p>
+          <p>The Call to the Ministry:</p>
+          <p>The 1926 Church Manual gives Seven different ways to recognize the call of the Lord. These are: 1) Advice
+            of Friends; 2) Voice of the Church; 3) Personal fitness; 4) Personal Inclination; 5) Need for workers; 6)
+            Voice of the Holy Spirit; 7) Doors closed. (pp. 81-88)</p>
+          <ol>
+            <li>Advice of friends: Over the past few years I have gotten to know several Seventh Day Baptist pastors. I
+              have become friends with them. Several of them have asked me when I was going to pursue the ministry. One
+              of these was my friend Dale Smalley in Wisconsin. After meeting me and talking with me a few hours, during
+              which time I don't believe the term ministry had come up, Dale asked me when I was going to go into the
+              ministry.</li>
+            <li>Voice of the Church: The Little Rock Church licensed me to the ministry several years ago. This was a
+              recognition of the call by my local church. The church confirmed that "Voice of the Church" recognition
+              when they voted recently to have me ordained. The first recognition of the call came when I was asked to
+              do sermonettes for the Church of God International in Arcadia California The first church recognition of
+              the call took place when Ken Lawson the Western District Overseer for the Church of God Seventh Day met
+              with me and ask me to start a congregation in Salt Lake. Again when I was asked by the Church of God in
+              Jonesboro to become their preacher I had church recognition of the call.</li>
+            <li> Personal fitness: The ability to do work beyond my current education is important. Recently Rod Henry
+              sent a letter to me acknowledging that a paper I had written for Summer Institute was written at a
+              graduate level. That is beyond my current level of education. I also would note that many have commented
+              over the years on my ability to preach and to teach.</li>
+            <li> Personal Inclination: The scripture says that if a man desire the office of a bishop he desires a good
+              work. (I Timothy 3:1). This is the scripture that is the basis of my call to the ministry. I started to
+              feel the call to the ministry in California when I started a newsletter. I began the work to help others
+              who were hurting from their experience in the Worldwide Church of God. God has blessed me with certain
+              talents. These are not of my own He has given them to me. I with Paul must say "Woe unto me , if I preach
+              not the gospel." It is my duty. It is my desire. It is what I believe God has put me here to do.</li>
+            <li>The need for workers: When I first moved to Little Rock the pulpit was being filled with Sunday
+              ministers. The Little Rock Church needed Seventh Day Baptists in the pulpit. I believe that God has met
+              that need through the preaching of Ken Van Horn and myself.</li>
+            <li>Voice of the Holy Spirit: I recently took a Spiritual gifts test. I showed that I was gifted in the area
+              of preaching and teaching. I feel a need to preach. God has blessed me with certain talents. These are not
+              of my own He has given them to me. I with Paul must say "Woe unto me , if I preach not the gospel." It is
+              my duty. It is my desire. It is what I believe God has put me here to do.</li>
+            <li>Doors Closed: The doors to ordination were closed when I was in the Church of God Seventh Day. Even
+              though the church recognized my gifts, and I was asked to fill the roles of a pastor in Salt Lake and in
+              Jonesboro, the church did not ordain me. I believe that God called me to be a minister, but has waited
+              till I was ready and in the right place.</li>
+          </ol>
+          <p>I believe that in each of the seven areas mentioned God has confirmed my call to the ministry.</p>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title h5">Psalm 46:1</div>
+              <p class="card-text">God is our refuge and strength, a very present help in trouble.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -41,5 +228,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>

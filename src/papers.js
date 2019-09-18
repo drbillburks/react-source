@@ -6,6 +6,7 @@ const Papers = (props) => <>
   <section id="papers">
     <h1><FaBook/>Papers</h1>
     <ul class='papers' >
+      <li><a href="papers/epistles.txt" target="_blank">Commentary - Philemon for Pastoral Epistles Feb. 1995</a></li>
       <li>
         Previously available papers will be converted to text from pdf and will be available soon.
       </li>

@@ -7,19 +7,17 @@ const Papers = (props) => <>
     <h1><FaBook/>Papers</h1>
     <ul class='papers' >
       <li><a href="papers/epistles.txt" target="_blank">Commentary - Philemon for Pastoral Epistles Feb. 1995</a></li>
-      <li>
-        Previously available papers will be converted to text from pdf and will be available soon.
-      </li>
       {/* <li>
         <a href='resources/papers/Sermon06192010hosea11verses1thru12.pdf' >Sermon 06/19/2010 Hosea 11:1-12 Punishment and Repentance (Long term sin Part II)</a>
       </li>
       <li>
         <a href='resources/papers/epistles.pdf' >Commentary - Philemon for Pastoral Epistles Feb. 1995</a>
-      </li>
+      </li> */}
       <li>
-        <a href='resources/papers/hebrews4.pdf' >Theology of Rest in Hebrews 3 &amp; 4 Dec. 1999</a>
+        <a href='papers/hebrews4.txt' >Theology of Rest in Hebrews 3 &amp; 4 Dec. 1999</a>
       </li>
-      <li>
+
+      {/*      <li>
         <a href='resources/papers/ijohn.pdf' >Commentary - I John for General Epistles Fall 1998</a>
       </li>
       <li>
@@ -112,6 +110,9 @@ const Papers = (props) => <>
       <li>
         <a href='resources/papers/sermonswadrbillburks06052010.pdf' >Sermon SWA 06/05/2010 John 1:1-3 and 14 The Use of the Word of God in Preaching the Gospel -  Dr. Bill Burks D.B.L.</a>
       </li> */}
+      <li>
+        Previously available papers will be converted to text from pdf and will be available soon.
+      </li>
     </ul>
     <FlavorText book="Ecclesiastes" chapter="12" verse="12" text="Of making many books there is no end, and much study wearies the body."/>
   </section>

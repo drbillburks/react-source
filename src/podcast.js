@@ -6,10 +6,20 @@ const Podcast = (props) => <>
     <h1>
    <FaPodcast/> Podcast</h1>
     <div className='maincontent' >
-      <ul className='podcast' >
-        <li> Previously available audio sermons will be uploaded to a streaming platform and will be available soon.</li>
-        {/* <li><a href='resources/podcast/010210titus3verses1thru7.mp3' >01/02/2010 Titus 3:1-7 Be a Good Citizen</a></li>
-        <li><a href='resources/podcast/01082011revelation3verses1thru6.mp3' >08 Revelation - Sermon 01/08/2011 Revelation 3:1-6 The Church of the Living Dead </a></li>
+    <FlavorText book="Romans" chapter="10" verse="14" text="...how shall they hear without a preacher?"/>
+
+    <iframe title="01/02/2010 Titus 3:1-7 Be a Good Citizen" width="560" height="315" src="https://www.youtube.com/embed/0-ZxV-h1_QE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="05/29/2010 Hosea 10:1-8 Sea-foam Religion" width="560" height="315" src="https://www.youtube.com/embed/-JDZoU_SHPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="12/04/2010 Revelation 2:8-11 - The Persecuted Church" width="560" height="315" src="https://www.youtube.com/embed/msvRgTz2H4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
+    <iframe title="01/08/2011 Revelation 3:1-6 The Church of the Living Dead" width="560" height="315" src="https://www.youtube.com/embed/1U9cCJj-5YA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="03/05/2011 Revelation 6:12-17 The Sixth Seal - The Nature of the Heavens are Changed" width="560" height="315" src="https://www.youtube.com/embed/GSDVfq4h7rY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="07/16/2011 Revelation 17;1-18 Ding Dong the Whore is Dead" width="560" height="315" src="https://www.youtube.com/embed/bdNZfBzGTio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="08/27/2011 Revelation Revelation 20:1-6 The Millenium" width="560" height="315" src="https://www.youtube.com/embed/ru7SnCQT8iA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="09/24/2011 Revelation 22:1-10 The Future is Similar to the Garden of Eden" width="560" height="315" src="https://www.youtube.com/embed/TyV8nNP3ZVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        
+{/*
+    
         <li><a href='resources/podcast/010910titus3verses8thru15.mp3' >01/09/2010 Titus 3:8-15 Accentuate the Positive and Avoid the Negative</a></li>
         <li><a href='resources/podcast/01152011revelation3verses7thru13.mp3' >09 Revelation - Sermon 01/15/2011 Revelation 3:7-13 The Church at Philadelphia</a></li>
         <li><a href='resources/podcast/01162010Genesis2Mark2Sabbath.mp3' >01/16/2010 The Sabbath is a Benefit to Man</a></li>
@@ -23,9 +33,7 @@ const Podcast = (props) => <>
         <li><a href='resources/podcast/02192011revelationchapter6v1thru8.mp3' >13 Revelation - Sermon 02/19/2011 Revelation 6:1-8 The Hoof Beats of Approaching Judgement</a></li>
         <li><a href='resources/podcast/02262011revelationchapter6v9thru11.mp3' >14 Revelation - Sermon 02/26/2011 Revelation 6:9-11 The Fifth Seal the Martyrdom of Christians</a></li>
         <li><a href='resources/podcast/02272010Hosea3isrealspenalty.mp3' >02/27/2010 Hosea 3:1-5 Israel Will Seek Her King</a></li>
-        <li><a href='resources/podcast/03052011revelationchapter6v12thru17.mp3' >15 Revelation - Sermon 03/05/2011 Revelation 6:12-17 The Sixth Seal - The Nature of the Heavens are Changed</a></li>
-        <li><a href='resources/p
-export default Papers;odcast/03062010hosea4verses1thru5badpriestsbadtheology.mp3' >03/06/2010 Hosea 4:1-5 Bad Priests Bad Theology</a></li>
+        <li><a href='resources/podcast/03062010hosea4verses1thru5badpriestsbadtheology.mp3' >03/06/2010 Hosea 4:1-5 Bad Priests Bad Theology</a></li>
         <li><a href='resources/podcast/03122011revelationchapter7v1thru17.mp3' >16 Revelation - Sermon 03/12/2011 Revelation 7:1-17 Intermission: The Sealing of the Saints</a></li>
         <li><a href='resources/podcast/03132010hosea4verses6thru19.mp3' >03/13/2010 Hosea 4:6-19 God is the Source of All Knowledge</a></li>
         <li><a href='resources/podcast/03192011revelationchapter8v1thru11.mp3' >17 Revelation - Sermon 03/19/2011 Revelation 8:1-11 The Seventh Seal - The First 3 Trumpets</a></li>
@@ -47,30 +55,25 @@ export default Papers;odcast/03062010hosea4verses1thru5badpriestsbadtheology.mp3
         <li><a href='resources/podcast/05212011revelationchapter12v1thru17.mp3' >24 Revelation - Sermon 05/21/2011 Revelation 12:1-17 The Women Representing Believers in All Ages</a></li>
         <li><a href='resources/podcast/05222010ecclesiastesthewholebook.mp3' >05/22/2010 Ecclesiastes 1:1-12:14 Life Under the sun</a></li>
         <li><a href='resources/podcast/05282011revelationchapter13v1thru18.mp3' >25 Revelation - Sermon 05/28/2011 Revelation 13:1-18 The Beast System</a></li>
-        <li><a href='resources/podcast/05292010hosea10verses1thru8.mp3' >Sermon 05/29/2010 Hosea 10:1-8 Sea-foam Religion</a></li>
-        <li><a href='resources/podcast/06042011revelationchapter14v1thru20.mp3' >26 Revelation - Sermon 06/04/2011 Revelation 14:1-20 The Harvest of the Earth</a></li>
+       <li><a href='resources/podcast/06042011revelationchapter14v1thru20.mp3' >26 Revelation - Sermon 06/04/2011 Revelation 14:1-20 The Harvest of the Earth</a></li>
         <li><a href='resources/podcast/06112011revelationchapter15v1thru18.mp3' >27 Revelation - Sermon 07/20/0911 Revelation 15:1-8 Preparation for the Wrath of God</a></li>
         <li><a href='resources/podcast/06122010hosea10verses9thru15.mp3' >Sermon 06/12/2010 Hosea 10:9-15 Repent of long-term sin</a></li>
         <li><a href='resources/podcast/06192010hosea11verses1thru12.mp3' >Sermon 06/19/2010 Hosea 11:1-12 Punishment and Repentance (Long term sin Part II)</a></li>
         <li><a href='resources/podcast/06262010hosea12verses1thru14.mp3' >Sermon 06/26/2010 Hosea 12:1-14 Chasing the Wind</a></li>
         <li><a href='resources/podcast/07022011revelationchapter16v1thru10.mp3' >28 Revelation - Sermon 07/02/2011 Revelation 16:1-10 The Seven Last Plagues Part 1</a></li>
         <li><a href='resources/podcast/07092011revelationchapter16v11thru20.mp3' >29 Revelation - Sermon 07/09/2011 Revelation 16:11-20 The Seven Last Plagues Part 2</a></li>
-        <li><a href='resources/podcast/07162011revelationchapter17v1thru18.mp3' >30 Revelation - Sermon 07/16/2011 Revelation 17;1-18 Ding Dong the Whore is Dead</a></li>
-        <li><a href='resources/podcast/08062011revelationchapter18v1thru24.mp3' >31 Revelation - Sermon 08/13/2011 Revelation 18:1-24 Babylon has Fallen</a></li>
+         <li><a href='resources/podcast/08062011revelationchapter18v1thru24.mp3' >31 Revelation - Sermon 08/13/2011 Revelation 18:1-24 Babylon has Fallen</a></li>
         <li><a href='resources/podcast/08132011revelationchapter19v1thru10.mp3' >32 Revelation - Sermon 08/13/2011 Revelation 19:1-10 Alleluia</a></li>
         <li><a href='resources/podcast/08202011revelationchapter19v11thru21.mp3' >33 Revelation - Sermon 08/20/2011 Revelation 19:11-21 The Return of Christ as King of Kings</a></li>
-        <li><a href='resources/podcast/08272011revelationchapter20v1thru6.mp3' >34 Revelation - Sermon 08/27/2011 Revelation Revelation 20:1-6 The Millenium</a></li>
         <li><a href='resources/podcast/09032011revelationchapter20v7thru15.mp3' >35 Revelation - Sermon 09/03/11 Revelation 20:7-15 The White Throne Judgement</a></li>
         <li><a href='resources/podcast/09102011revelationchapter21vs1thru8.mp3' >36 Revelation - Sermon 09/10/2011 Revelation Revelation 21:1-8 Introduction to the New Heavens and the New Earth</a></li>
         <li><a href='resources/podcast/09172011revelationchapter21vs9thru27.mp3' >37 Revelation - Sermon 09/17/2011 Revelation 21:9-27 The Holy City of God New Jerusalem</a></li>
-        <li><a href='resources/podcast/09242011revelationchapter22vs1thru10.mp3' >38 Revelation - Sermon 09/24/2011 Revelation 22:1-10 The Future is Similar to the Garden of Eden</a></li>
         <li><a href='resources/podcast/10012011revelationchapter22vs11thru21.mp3' >39 Revelation - Sermon10/01/2011 Revelation 22:11-21 Closing Salutation</a></li>
         <li><a href='resources/podcast/11072010revelationchapter1v1t3.mp3' >01 Revelation - Sermon 11/07/2010 Revelation 1:1-3 - Introduction Part I 11/21/2010 11:00AM</a></li>
         <li><a href='resources/podcast/11142010revelationchapter1v4.mp3' >02 Revelation - Sermon 11/14/2010 Revelation 1:4ff - Introduction Part II</a></li>
         <li><a href='resources/podcast/11212010revelationchapter1v9t20.mp3' >03 Revelation - Sermon 11/21/2010 Revelation Chapter 1:9-20 - The Vision</a></li>
         <li><a href='resources/podcast/11282010revelationchapter2v1t7.mp3' >04 Revelation - Sermon 11/28/2010 Revelation Chapter 2:1-7 - Message to the Church at Ephesus</a></li>
-        <li><a href='resources/podcast/12042010revelation2verses8thru11.mp3' >05 Revelation - Sermon 12/04/10 Revelation 2:8-11 - The Persecuted Church</a></li>
-        <li><a href='resources/podcast/120509titus1introduction.mp3' >12/05/2009 Titus 1:1-4 God is The Only Authority</a></li>
+         <li><a href='resources/podcast/120509titus1introduction.mp3' >12/05/2009 Titus 1:1-4 God is The Only Authority</a></li>
         <li><a href='resources/podcast/12112010revelation2verses12thru17.mp3' >06 Revelation - Sermon 12/11/10 Revelation 2:12-17 - The Compromising Church</a></li>
         <li><a href='resources/podcast/121209titus1_5-9troubleandpastors.mp3' >12/12/09 Titus 1:5-9 Trouble Demands Godly People to Serve</a></li>
         <li><a href='resources/podcast/12182010revelation2verses18thru29.mp3' >07 Revelation - Sermon 12/18/2010 Revelation 2:18-29 The Church with that women Jezebel</a></li>
@@ -92,8 +95,7 @@ export default Papers;odcast/03062010hosea4verses1thru5badpriestsbadtheology.mp3
         <li><a href='resources/podcast/sermon092510mark115broarce.mp3' >Sermon 09/25/10 Mark 1:15 Repent and Believe the Gospel -  Bro. Alberto Arce</a></li>
         <li><a href='resources/podcast/sermonswadrbillburks06052010.mp3' >Sermon SWA 06/05/2010 John 1:1-3 and 14 The Use of the Word of God in Preaching the Gospel - Dr. Bill Burks D.B.L.</a></li>
         <li><a href='resources/podcast/thesiiendofbook.mp3' >Sermon 08/28/2010 Second Thessalonians - Wrap Up</a></li>  */}
-        </ul></div>
-        <FlavorText book="Romans" chapter="10" verse="14" text="...how shall they hear without a preacher?"/>
+        </div>
   </section>
 </>
 export default Podcast;

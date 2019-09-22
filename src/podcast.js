@@ -100,6 +100,8 @@ return <>
       <YouTubeEmbed title={selectedVideo.title} link={selectedVideo.link} autoplay={autoplay} />
       <ul>
       {videos.map((x,i)=><li><a href="#podcast" onClick={(e)=>{ setSelectedVideo(videos[i]);setAutoplay(1);}}>{x.title}</a></li>)}
+      <li> Additional Videos - Facebook - <a href="https://www.facebook.com/pg/RemembranceChurchFortWorth/videos/?ref=page_internal">Remembrance Church Fort Worth</a></li>
+      <li> Additional Videos - Facebook - <a href="https://www.facebook.com/pg/RemembranceChurchFortWorth/videos/?ref=page_internal">Remembrance Seventh Day Baptist</a></li>
       </ul>
     </div>
   </section>

@@ -15,6 +15,7 @@ const Podcast = (props) => <>
     <iframe title="2011/09/03 Revelation 20:7-15 The White Throne Judgement" width="560" height="315" src="https://www.youtube.com/embed/qclFPkq1yVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe title="2011/08/27 Revelation Revelation 20:1-6 The Millenium" width="560" height="315" src="https://www.youtube.com/embed/ru7SnCQT8iA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe title="2011/08/20 Revelation 19:11-21 The Return of Christ as King of Kings" width="560" height="315" src="https://www.youtube.com/embed/AwYX6beMq4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="2011/08/13 Revelation 18:1-24 Babylon has Fallen" width="560" height="315" src="https://www.youtube.com/embed/0tbYbQCOxWE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe title="2011/08/13 Revelation 19:1-10 Alleluia" width="560" height="315" src="https://www.youtube.com/embed/U5AMt2wUDAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe title="2011/07/16 Revelation 17;1-18 Ding Dong the Whore is Dead" width="560" height="315" src="https://www.youtube.com/embed/bdNZfBzGTio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe title="2011/07/09 Revelation 16:11-20 The Seven Last Plagues Part 2" width="560" height="315" src="https://www.youtube.com/embed/6VS8oGReeAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -91,8 +92,6 @@ const Podcast = (props) => <>
     <iframe title="2005/11/05 I Peter 4:10-19 the Suffering of Christ" width="560" height="315" src="https://www.youtube.com/embed/Wvbct2S5lJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe title="2005/10/15 Peter 3:1-12 How To Live Holy Lives" width="560" height="315" src="https://www.youtube.com/embed/JBZsdRHeM90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    {/* 08/13/2011 Revelation 18:1-24 Babylon has Fallen */}
-
   </section>
 </>
 export default Podcast;

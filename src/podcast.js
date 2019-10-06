@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import FlavorText from './flavor-text';
 import { FaPodcast } from 'react-icons/fa';
 const videos = [
+  {"title":"2019/10/05 Psalm 02","link":"https://www.youtube.com/embed/lUOcKiuipAo"},
   {"title":"2019/09/28 Psalm 01","link":"https://www.youtube.com/embed/JOh34-_jTWM"},
   {"title":"2011/10/01 Revelation 22:11-21 Closing Salutation","link":"https://www.youtube.com/embed/LsHmjBO6HpY"},
   {"title":"2011/09/24 Revelation 22:1-10 The Future is Similar to the Garden of Eden","link":"https://www.youtube.com/embed/TyV8nNP3ZVc"},

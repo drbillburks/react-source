@@ -2,10 +2,12 @@ import React from 'react';
 import FlavorText from './flavor-text';
 import { FaPray } from 'react-icons/fa';
 
+
+
 const Home = (props) => <>
   <section id="home">
     <h1><FaPray/> Who is Dr. Bill Burks?</h1>
-    
+
 <p>Dr. Bill Burks of Fort Worth Texas provides both audio, and textual sermons. Pastor Bill Burks's ministry is varied. He has taught Sabbath school and delights in explaining Bible principles.  He has studied Greek and Hebrew and enjoys sharing insights from both languages.</p>
     
 <p>He prays for people and preaches in a way that even children can understand the gospel message. He can bring concepts of faith down to their level and still keep the interest of their parents.</p>

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import FlavorText from './flavor-text';
 import { FaPodcast } from 'react-icons/fa';
 const videos = [
+  {"title":"I Kings 11 1 10 Solomon the Danger of Getting Everything you want","link":"https://www.youtube.com/embed/U-Nkv9S2r7o"},
   {"title":"2019/10/05 Psalm 02","link":"https://www.youtube.com/embed/lUOcKiuipAo"},
   {"title":"2019/09/28 Psalm 01","link":"https://www.youtube.com/embed/JOh34-_jTWM"},
   {"title":"2011/10/01 Revelation 22:11-21 Closing Salutation","link":"https://www.youtube.com/embed/LsHmjBO6HpY"},

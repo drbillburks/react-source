@@ -2,6 +2,10 @@ import React, {useState} from 'react';
 import FlavorText from './flavor-text';
 import { FaPodcast } from 'react-icons/fa';
 const videos = [
+  {"title":"I Kings 11 11 26","link":"https://www.youtube.com/embed/jdpq_UYJLyA"},
+  {"title":"2019/10/25 Psalm 5 Four Requests","link":"https://www.youtube.com/embed/wAsmEeDHCr8"},
+  {"title":"2019/10/19 Psalm 4 Acting Shamefully","link":"https://www.youtube.com/embed/LZ1KNvwDjiw"},
+  {"title":"2019/10/12 Psalm 3 God Responds in Our Time of Need","link":"https://www.youtube.com/embed/0dQJuWSvmRA"},
   {"title":"I Kings 11 1 10 Solomon the Danger of Getting Everything you want","link":"https://www.youtube.com/embed/U-Nkv9S2r7o"},
   {"title":"2019/10/05 Psalm 02","link":"https://www.youtube.com/embed/lUOcKiuipAo"},
   {"title":"2019/09/28 Psalm 01","link":"https://www.youtube.com/embed/JOh34-_jTWM"},
